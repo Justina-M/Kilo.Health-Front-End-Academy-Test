@@ -1,0 +1,12 @@
+@import "../../../scss//mixins";
+
+.SuccessStoriesSection {
+  &__cta {
+    max-width: 34rem;
+    margin: 1.4rem auto 0 auto;
+
+    @include md {
+      margin: 2.4rem auto 0 auto;
+    }
+  }
+}

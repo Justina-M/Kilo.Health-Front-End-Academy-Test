@@ -1,0 +1,49 @@
+@import "../../../scss/mixins";
+
+.Accordion {
+  width: 100%;
+
+  &__item {
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__item-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-weight-bold);
+    line-height: 2rem;
+    text-align: left;
+    padding: 1.6rem 2.2rem 1.6rem 1.6rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include md {
+      font-size: var(--font-size-base);
+      line-height: 2.4rem;
+    }
+  }
+
+  &__chevron {
+    margin-left: 3rem;
+  }
+
+  &__item-content {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-regular);
+    line-height: 2rem;
+    text-align: left;
+    padding: 0 3rem 0 1.6rem;
+    overflow: hidden;
+    transition: all 0.25s;
+
+    & > div {
+      padding-bottom: 1.6rem;
+    }
+  }
+}

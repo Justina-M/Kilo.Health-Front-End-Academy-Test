@@ -1,0 +1,12 @@
+@import "../../../scss//mixins";
+
+.FaqSection {
+  &__cta {
+    max-width: 34rem;
+    margin: 4rem auto 0 auto;
+
+    @include md {
+      margin: 4.8rem auto 0 auto;
+    }
+  }
+}

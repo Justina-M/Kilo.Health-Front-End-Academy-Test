@@ -1,0 +1,77 @@
+.PricingCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-white);
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+
+  &--selected {
+    border-color: var(--color-primary);
+  }
+
+  &:hover,
+  &:active {
+    border-color: var(--color-primary);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+
+  &__title {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__flag {
+    margin-left: 0.8rem;
+    padding: 3px 0.8rem;
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.8rem;
+    color: var(--color-grey-dark);
+    background-color: var(--color-yellow);
+    border-radius: 0.6rem;
+  }
+  &__price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 4px;
+
+    & p {
+      margin-left: 5px;
+    }
+  }
+
+  &__bottom {
+    font-size: var(--font-size-small);
+    color: var(--color-grey-dark);
+
+    & span {
+      margin-right: 5px;
+    }
+  }
+
+  &__total {
+    text-decoration-line: line-through;
+  }
+
+  &__total-discount {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__checkbox {
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+  }
+}

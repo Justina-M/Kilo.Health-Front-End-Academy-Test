@@ -1,0 +1,49 @@
+@import "../../../scss/mixins";
+
+.YogaProgramSection {
+  margin-top: 2.4rem;
+
+  &__pricing-heading {
+    margin-bottom: 1.6rem;
+  }
+
+  &__pricing-table {
+    margin-bottom: 4rem;
+  }
+
+  &__features-heading {
+    margin-bottom: 2.4rem;
+  }
+
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3.4rem;
+    grid-row-gap: 1.6rem;
+    margin-top: 3.2rem;
+
+    &__pricing-heading {
+      margin-bottom: 0;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &__pricing-table {
+      margin-bottom: 0;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &__features-heading {
+      margin-bottom: 0;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &__features {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+  }
+}

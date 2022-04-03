@@ -1,0 +1,104 @@
+// Using Roboto font instead of SF Pro, because of the license
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import "mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  font-family: "Roboto", sans-serif;
+  font-weight: var(--font-weight-regular);
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.25s;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-accent);
+    outline-offset: 5px;
+  }
+}
+
+h1 {
+  font-size: var(--font-size-larger);
+  font-weight: var(--font-weight-black);
+  color: var(--color-black);
+  line-height: 3.6rem;
+
+  @include md {
+    font-size: var(--font-size-largest);
+    color: var(--color-grey-dark);
+    line-height: 5.6rem;
+  }
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-dark);
+  line-height: 3.2rem;
+
+  @include md {
+    font-size: var(--font-size-large);
+    line-height: 4.4rem;
+  }
+}
+
+h3 {
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-dark);
+  line-height: 2.8rem;
+
+  @include md {
+    font-size: var(--font-size-medium);
+    line-height: 3.2rem;
+  }
+}
+
+h5 {
+  font-size: var(--font-size-smaller);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-dark);
+  line-height: 2rem;
+
+  @include md {
+    font-size: var(--font-size-base);
+    line-height: 2.4rem;
+  }
+}

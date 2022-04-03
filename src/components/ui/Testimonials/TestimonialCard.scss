@@ -1,0 +1,41 @@
+.TestimonialCard {
+  max-width: 32rem;
+  min-width: 32rem;
+  background-color: var(--color-white);
+  color: var(--color-grey-dark);
+  box-shadow: 0 1.6rem 3.2rem rgba(57, 53, 60, 0.08);
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+
+  &__author {
+    font-size: var(--font-size-smaller);
+    font-weight: var(--font-weight-bold);
+    line-height: 2rem;
+  }
+
+  &__author-details {
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__ratings {
+    margin-bottom: 1.6rem;
+  }
+
+  &__rated {
+    fill: var(--color-primary-light);
+  }
+
+  &__image {
+    max-width: 20rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__testimonial {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: 2.4rem;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../../scss/mixins";
+
+.PositiveYogaSection {
+  @include md {
+    display: flex;
+    gap: 2rem;
+
+    &__left {
+      flex: 0 0 50%;
+      max-width: 50%;
+      order: 1;
+    }
+
+    &__right {
+      flex: 0 0 50%;
+      max-width: 50%;
+      order: 2;
+    }
+  }
+
+  &__list {
+    padding: 2.4rem 0 4rem 0;
+
+    & p {
+      font-size: var(--font-size-small);
+    }
+  }
+
+  &__image {
+    padding: 4.5rem 0 2.5rem 0;
+    background: linear-gradient(
+      -30deg,
+      transparent 33%,
+      #ebebeb 33%,
+      #ebebeb 66%,
+      transparent 66%,
+      transparent 100%
+    );
+
+    @include md {
+      background: none;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+}

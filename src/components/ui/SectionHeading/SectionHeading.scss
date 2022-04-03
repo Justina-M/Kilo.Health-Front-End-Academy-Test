@@ -1,0 +1,29 @@
+@import "../../../scss/mixins";
+
+.SectionHeading {
+  &__h1 {
+    margin-bottom: 2.4rem;
+
+    @include md {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__h3 {
+    margin-bottom: 2.4rem;
+    text-align: left;
+
+    @include md {
+      text-align: center;
+    }
+  }
+
+  &__subheading {
+    margin-bottom: 0.8rem;
+    font-size: var(--font-size-small);
+
+    @include md {
+      text-align: center;
+    }
+  }
+}

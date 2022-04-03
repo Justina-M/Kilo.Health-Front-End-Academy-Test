@@ -1,0 +1,19 @@
+.PricingTable {
+  &__list {
+    list-style-type: none;
+    margin-bottom: 1.6rem;
+  }
+
+  &__policy {
+    margin-top: 1.6rem;
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-grey-darker);
+    line-height: 1.8rem;
+    text-align: center;
+
+    & p {
+      margin-bottom: 1.6rem;
+    }
+  }
+}

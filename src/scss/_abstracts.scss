@@ -1,0 +1,39 @@
+@import "mixins";
+
+// Width
+.max-content-width {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  width: 90%;
+}
+
+.max-width-730 {
+  max-width: 73rem;
+  margin: auto;
+}
+
+// Colors
+.text-primary {
+  color: var(--color-primary);
+}
+
+// Margin / padding
+.mb-16 {
+  margin-bottom: 1.6rem;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+
+.mb-32 {
+  margin-bottom: 3.2rem;
+}
+
+.mt-40 {
+  margin-top: 4rem;
+
+  @include md {
+    margin-top: 4.8rem;
+  }
+}

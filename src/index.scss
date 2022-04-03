@@ -1,0 +1,23 @@
+@import "scss/vars";
+@import "scss/base";
+@import "scss/abstracts";
+@import "scss/mixins";
+
+@import "components/layouts/Header/Header";
+@import "components/layouts/Layout";
+
+@import "components/ui/Accordion/Accordion";
+@import "components/ui/PricingTable/PricingTable";
+@import "components/ui/PricingTable/PricingCard";
+@import "components/ui/Button/Button";
+@import "components/ui/IconList/IconList";
+@import "components/ui/SectionHeading/SectionHeading";
+@import "components/ui/Testimonials/Testimonials";
+@import "components/ui/Testimonials/TestimonialCard";
+
+@import "components/Banner/Banner";
+
+@import "pages/sections/YogaProgramSection/YogaProgramSection";
+@import "pages/sections/SuccessStoriesSection/SuccessStoriesSection";
+@import "pages/sections/PositiveYogaSection/PositiveYogaSection";
+@import "pages/sections/FaqSection/FaqSection";

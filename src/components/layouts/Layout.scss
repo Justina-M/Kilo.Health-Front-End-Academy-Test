@@ -1,0 +1,11 @@
+@import "../../scss/mixins";
+
+.Layout {
+  margin-top: 1.6rem;
+  margin-bottom: 6.5rem;
+
+  @include md {
+    margin-top: 4.8rem;
+    margin-bottom: 12rem;
+  }
+}

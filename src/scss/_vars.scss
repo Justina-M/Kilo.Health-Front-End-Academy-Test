@@ -1,0 +1,49 @@
+:root {
+  --color-primary: #ff9b4e;
+  --color-primary-dark: #e48438;
+  --color-primary-light: #ffcc80;
+  --color-yellow: #ffe082;
+  --color-accent: #90caf9;
+  --color-error: #960000;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-darkest: #212121;
+  --color-grey-dark: #22222c;
+  --color-grey-darker: #39353c;
+  --color-grey: #424242;
+
+  --color-primary-alpha: rgba(255, 155, 78, 0.24);
+
+  --font-size-smallest: 1.2rem;
+  --font-size-small: 1.4rem;
+  --font-size-smaller: 1.5rem;
+  --font-size-base: 1.6rem;
+  --font-size-normal: 2rem;
+  --font-size-medium: 2.4rem;
+  --font-size-larger: 2.8rem;
+  --font-size-large: 3.2rem;
+  --font-size-largest: 4rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --content-width: 112rem;
+}
+
+$breakpoints: (
+  "xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+:export {
+  breakpointXs: map-get($breakpoints, "xs");
+  breakpointSm: map-get($breakpoints, "sm");
+  breakpointMd: map-get($breakpoints, "md");
+  breakpointLg: map-get($breakpoints, "lg");
+  breakpointXl: map-get($breakpoints, "xl");
+}
