@@ -43,8 +43,8 @@ const PricingTable = ({ data }) => {
           period.
         </p>
         <p>
-          By choosing a payment method you agree to the <a href="#">T&Cs</a> and{" "}
-          <a href="#">Privacy Policy</a>
+          By choosing a payment method you agree to the <a href="/">T&Cs</a> and{" "}
+          <a href="/">Privacy Policy</a>
         </p>
         <img src={safeCheckoutBadge} alt="Guaranteed safe checkout" />
       </div>

@@ -1,6 +1,4 @@
 const IconList = ({ data = [], className }) => {
-  const { title, body, imgSrc } = data;
-
   return (
     <ul className={`IconList ${className ? className : ""}`}>
       {data.map((item, index) => (
